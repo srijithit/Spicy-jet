@@ -17,18 +17,18 @@
     --text-dark: #1a1a1a;
     --text-muted: #5a5a5a;
   }
-
+ 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     font-family: 'Poppins', sans-serif;
     background: var(--cream);
     color: var(--text-dark);
     overflow-x: hidden;
   }
-
+ 
   /* ── HERO ── */
   .hero {
     background: var(--green-dark);
@@ -42,7 +42,7 @@
     overflow: hidden;
     padding: 2rem 1rem 4rem;
   }
-
+ 
   .hero::before {
     content: '';
     position: absolute;
@@ -51,7 +51,7 @@
       radial-gradient(ellipse 80% 60% at 50% 0%, rgba(42,170,84,0.25) 0%, transparent 70%),
       radial-gradient(ellipse 60% 40% at 20% 80%, rgba(245,197,24,0.08) 0%, transparent 60%);
   }
-
+ 
   .hero-noise {
     position: absolute;
     inset: 0;
@@ -59,7 +59,7 @@
     opacity: 0.5;
     pointer-events: none;
   }
-
+ 
   .leaf-bg {
     position: absolute;
     font-size: 200px;
@@ -69,13 +69,13 @@
   }
   .leaf-bg.l1 { top: -30px; left: -40px; transform: rotate(-20deg); }
   .leaf-bg.l2 { bottom: -30px; right: -40px; transform: rotate(160deg); }
-
+ 
   .logo-wrap {
     position: relative;
     z-index: 2;
     animation: fadeDown 0.8s ease both;
   }
-
+ 
   .logo-icon {
     width: 90px;
     height: 90px;
@@ -89,12 +89,12 @@
     box-shadow: 0 8px 32px rgba(245,197,24,0.4);
     animation: pulse 2.5s ease-in-out infinite;
   }
-
+ 
   @keyframes pulse {
     0%, 100% { box-shadow: 0 8px 32px rgba(245,197,24,0.4); }
     50% { box-shadow: 0 8px 48px rgba(245,197,24,0.7); }
   }
-
+ 
   .brand-name {
     font-family: 'Bebas Neue', cursive;
     font-size: clamp(4rem, 12vw, 8rem);
@@ -103,9 +103,9 @@
     line-height: 0.9;
     text-shadow: 0 4px 20px rgba(0,0,0,0.5);
   }
-
+ 
   .brand-name span { color: var(--yellow); }
-
+ 
   .brand-sub {
     font-family: 'Poppins', sans-serif;
     font-size: clamp(0.9rem, 2.5vw, 1.2rem);
@@ -115,7 +115,7 @@
     margin-top: 0.4rem;
     font-weight: 500;
   }
-
+ 
   .badge-veg {
     display: inline-flex;
     align-items: center;
@@ -130,7 +130,7 @@
     border-radius: 50px;
     margin-top: 1rem;
   }
-
+ 
   .badge-veg::before {
     content: '';
     width: 10px;
@@ -139,7 +139,7 @@
     border: 2px solid white;
     background: transparent;
   }
-
+ 
   .hero-cta {
     display: flex;
     gap: 1rem;
@@ -150,7 +150,7 @@
     z-index: 2;
     animation: fadeUp 1s 0.4s ease both;
   }
-
+ 
   .btn {
     padding: 14px 32px;
     border-radius: 50px;
@@ -163,25 +163,25 @@
     transition: transform 0.2s, box-shadow 0.2s;
     display: inline-block;
   }
-
+ 
   .btn:hover { transform: translateY(-3px); }
-
+ 
   .btn-primary {
     background: var(--yellow);
     color: var(--green-dark);
     box-shadow: 0 6px 24px rgba(245,197,24,0.4);
   }
-
+ 
   .btn-primary:hover { box-shadow: 0 10px 32px rgba(245,197,24,0.6); }
-
+ 
   .btn-outline {
     background: transparent;
     color: white;
     border: 2px solid rgba(255,255,255,0.4);
   }
-
+ 
   .btn-outline:hover { border-color: white; background: rgba(255,255,255,0.07); }
-
+ 
   .phone-bar {
     position: relative;
     z-index: 2;
@@ -190,14 +190,14 @@
     font-size: 0.85rem;
     animation: fadeUp 1s 0.6s ease both;
   }
-
+ 
   .phone-bar a {
     color: var(--yellow);
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
   }
-
+ 
   .scroll-hint {
     position: absolute;
     bottom: 1.5rem;
@@ -209,22 +209,22 @@
     text-transform: uppercase;
     animation: bounce 1.6s ease-in-out infinite;
   }
-
+ 
   @keyframes bounce {
     0%, 100% { transform: translateX(-50%) translateY(0); }
     50% { transform: translateX(-50%) translateY(6px); }
   }
-
+ 
   @keyframes fadeDown {
     from { opacity: 0; transform: translateY(-24px); }
     to { opacity: 1; transform: translateY(0); }
   }
-
+ 
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
-
+ 
   /* ── PARCEL STRIP ── */
   .parcel-strip {
     background: var(--yellow);
@@ -235,12 +235,12 @@
     font-size: 0.95rem;
     letter-spacing: 1px;
   }
-
+ 
   .parcel-strip span { font-size: 1.2rem; }
-
+ 
   /* ── SECTION COMMON ── */
   section { padding: 5rem 1rem; }
-
+ 
   .section-label {
     font-size: 0.75rem;
     font-weight: 700;
@@ -249,7 +249,7 @@
     color: var(--green-light);
     margin-bottom: 0.5rem;
   }
-
+ 
   .section-title {
     font-family: 'Bebas Neue', cursive;
     font-size: clamp(2.4rem, 6vw, 4rem);
@@ -257,28 +257,28 @@
     line-height: 1;
     margin-bottom: 0.5rem;
   }
-
+ 
   .section-desc {
     color: var(--text-muted);
     max-width: 480px;
     font-size: 0.95rem;
     line-height: 1.6;
   }
-
+ 
   /* ── MENU ── */
   .menu-section { background: var(--cream); }
-
+ 
   .menu-container { max-width: 1100px; margin: 0 auto; }
-
+ 
   .menu-header { margin-bottom: 3rem; }
-
+ 
   .menu-tabs {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
     margin-top: 2rem;
   }
-
+ 
   .tab {
     padding: 8px 20px;
     border-radius: 50px;
@@ -291,20 +291,20 @@
     transition: all 0.2s;
     color: var(--text-muted);
   }
-
+ 
   .tab.active, .tab:hover {
     background: var(--green);
     border-color: var(--green);
     color: white;
   }
-
+ 
   .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
   }
-
+ 
   .menu-card {
     background: white;
     border-radius: 16px;
@@ -317,28 +317,28 @@
     transition: transform 0.2s, box-shadow 0.2s;
     position: relative;
   }
-
+ 
   .menu-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 32px rgba(26,122,60,0.15);
   }
-
+ 
   .menu-card-info { flex: 1; }
-
+ 
   .menu-card-name {
     font-weight: 600;
     font-size: 1rem;
     color: var(--text-dark);
     margin-bottom: 2px;
   }
-
+ 
   .menu-card-name-tamil {
     font-family: 'Noto Sans Tamil', sans-serif;
     font-size: 0.8rem;
     color: var(--text-muted);
     margin-top: 2px;
   }
-
+ 
   .menu-card-tag {
     font-size: 0.7rem;
     font-weight: 600;
@@ -349,10 +349,10 @@
     margin-top: 6px;
     display: inline-block;
   }
-
+ 
   .tag-bestseller { background: #fff3cd; color: #856404; }
   .tag-spicy { background: #ffe0e0; color: #c0392b; }
-
+ 
   .menu-card-price {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.8rem;
@@ -361,7 +361,7 @@
     white-space: nowrap;
     margin-left: 1rem;
   }
-
+ 
   .menu-card-price::before {
     content: '₹';
     font-size: 1rem;
@@ -369,7 +369,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
   }
-
+ 
   .veg-dot {
     position: absolute;
     top: 12px;
@@ -380,7 +380,7 @@
     background: var(--green-light);
     border: 2px solid var(--green-dark);
   }
-
+ 
   /* Category title */
   .cat-title {
     grid-column: 1 / -1;
@@ -392,7 +392,7 @@
     margin-top: 1rem;
     letter-spacing: 1px;
   }
-
+ 
   /* ── SPECIALS ── */
   .specials-section {
     background: var(--green-dark);
@@ -400,18 +400,18 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .specials-section::before {
     content: '';
     position: absolute;
     inset: 0;
     background: radial-gradient(ellipse 70% 70% at 80% 50%, rgba(42,170,84,0.2) 0%, transparent 70%);
   }
-
+ 
   .specials-section .section-title { color: white; }
   .specials-section .section-label { color: var(--yellow); }
   .specials-section .section-desc { color: rgba(255,255,255,0.6); }
-
+ 
   .specials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -423,7 +423,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-
+ 
   .special-card {
     background: rgba(255,255,255,0.07);
     border: 1px solid rgba(255,255,255,0.12);
@@ -432,27 +432,27 @@
     text-align: center;
     transition: background 0.2s, transform 0.2s;
   }
-
+ 
   .special-card:hover {
     background: rgba(255,255,255,0.12);
     transform: translateY(-4px);
   }
-
+ 
   .special-icon { font-size: 2.8rem; margin-bottom: 0.8rem; }
-
+ 
   .special-name {
     font-weight: 700;
     font-size: 1rem;
     color: white;
     margin-bottom: 4px;
   }
-
+ 
   .special-price {
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
     color: var(--yellow);
   }
-
+ 
   .special-price::before {
     content: '₹';
     font-size: 1rem;
@@ -460,14 +460,14 @@
     font-weight: 700;
     vertical-align: super;
   }
-
+ 
   /* ── MOJITO ── */
   .mojito-section {
     background: linear-gradient(135deg, #e8f5e9 0%, #f0fdf4 100%);
     text-align: center;
     padding: 4rem 1rem;
   }
-
+ 
   .mojito-cards {
     display: flex;
     gap: 1.5rem;
@@ -475,7 +475,7 @@
     flex-wrap: wrap;
     margin-top: 2rem;
   }
-
+ 
   .mojito-card {
     background: white;
     border-radius: 20px;
@@ -483,7 +483,7 @@
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
     min-width: 180px;
   }
-
+ 
   .mojito-card-type {
     font-size: 0.75rem;
     font-weight: 700;
@@ -492,20 +492,20 @@
     color: var(--text-muted);
     margin-bottom: 0.4rem;
   }
-
+ 
   .mojito-card-name {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.8rem;
     color: var(--green-dark);
     margin-bottom: 0.5rem;
   }
-
+ 
   .mojito-price {
     font-family: 'Bebas Neue', cursive;
     font-size: 2.5rem;
     color: var(--green);
   }
-
+ 
   .mojito-price::before {
     content: '₹';
     font-size: 1.2rem;
@@ -513,13 +513,13 @@
     font-weight: 700;
     vertical-align: super;
   }
-
+ 
   /* ── MAP ── */
   .location-section {
     background: white;
     padding: 5rem 1rem;
   }
-
+ 
   .location-container {
     max-width: 1100px;
     margin: 0 auto;
@@ -528,11 +528,11 @@
     gap: 4rem;
     align-items: start;
   }
-
+ 
   @media (max-width: 700px) {
     .location-container { grid-template-columns: 1fr; gap: 2rem; }
   }
-
+ 
   .location-info-list {
     list-style: none;
     margin-top: 2rem;
@@ -540,13 +540,13 @@
     flex-direction: column;
     gap: 1.2rem;
   }
-
+ 
   .location-info-list li {
     display: flex;
     gap: 1rem;
     align-items: flex-start;
   }
-
+ 
   .loc-icon {
     width: 42px;
     height: 42px;
@@ -558,7 +558,7 @@
     font-size: 1.2rem;
     flex-shrink: 0;
   }
-
+ 
   .loc-label {
     font-size: 0.75rem;
     font-weight: 700;
@@ -567,34 +567,34 @@
     color: var(--text-muted);
     margin-bottom: 2px;
   }
-
+ 
   .loc-value {
     font-size: 0.95rem;
     color: var(--text-dark);
     font-weight: 500;
     line-height: 1.4;
   }
-
+ 
   .loc-value a {
     color: var(--green);
     text-decoration: none;
     font-weight: 700;
   }
-
+ 
   .map-embed {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 8px 40px rgba(0,0,0,0.12);
     height: 380px;
   }
-
+ 
   .map-embed iframe {
     width: 100%;
     height: 100%;
     border: none;
     display: block;
   }
-
+ 
   /* ── FOOTER ── */
   footer {
     background: var(--green-dark);
@@ -603,9 +603,9 @@
     padding: 2rem 1rem;
     font-size: 0.85rem;
   }
-
+ 
   footer strong { color: var(--yellow); }
-
+ 
   /* ── NAV ── */
   nav {
     position: fixed;
@@ -619,13 +619,13 @@
     justify-content: space-between;
     transition: background 0.3s, backdrop-filter 0.3s;
   }
-
+ 
   nav.scrolled {
     background: rgba(15,82,40,0.95);
     backdrop-filter: blur(12px);
     box-shadow: 0 2px 20px rgba(0,0,0,0.3);
   }
-
+ 
   .nav-logo {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.6rem;
@@ -633,15 +633,15 @@
     text-decoration: none;
     letter-spacing: 2px;
   }
-
+ 
   .nav-logo span { color: var(--yellow); }
-
+ 
   .nav-links {
     display: flex;
     gap: 2rem;
     list-style: none;
   }
-
+ 
   .nav-links a {
     color: rgba(255,255,255,0.75);
     text-decoration: none;
@@ -649,19 +649,19 @@
     font-weight: 500;
     transition: color 0.2s;
   }
-
+ 
   .nav-links a:hover { color: var(--yellow); }
-
+ 
   @media (max-width: 560px) {
     .nav-links { display: none; }
   }
-
+ 
   /* ── UTILITY ── */
   .max-w { max-width: 1100px; margin: 0 auto; }
 </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav id="nav">
   <a href="#" class="nav-logo">SPICY<span>JET</span></a>
@@ -672,37 +672,37 @@
     <li><a href="tel:9952468862" style="color:var(--yellow);">📞 Call</a></li>
   </ul>
 </nav>
-
+ 
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-noise"></div>
   <div class="leaf-bg l1">🌿</div>
   <div class="leaf-bg l2">🌿</div>
-
+ 
   <div class="logo-wrap">
     <div class="logo-icon">🍵</div>
     <div class="brand-name">SPICY<span>JET</span></div>
     <div class="brand-sub">Soup &amp; Snacks</div>
     <div class="badge-veg">Pure Veg</div>
   </div>
-
+ 
   <div class="hero-cta">
     <a href="#menu" class="btn btn-primary">View Menu</a>
     <a href="#location" class="btn btn-outline">Find Us</a>
   </div>
-
+ 
   <div class="phone-bar">
     Call us: <a href="tel:9952468862">99524 68862</a>
   </div>
-
+ 
   <div class="scroll-hint">↓ scroll</div>
 </section>
-
+ 
 <!-- PARCEL STRIP -->
 <div class="parcel-strip">
   🛍️ Parcel Available — <span>₹5</span> parcel charge only!
 </div>
-
+ 
 <!-- MENU SECTION -->
 <section class="menu-section" id="menu">
   <div class="menu-container">
@@ -711,12 +711,12 @@
       <div class="section-title">Our Menu</div>
       <p class="section-desc">Fresh, pure-veg soups and crispy snacks made with love. Every item prepared fresh on order.</p>
     </div>
-
+ 
     <div class="menu-grid">
-
+ 
       <!-- Soups (Sets) -->
       <div class="cat-title">🍜 Soup Sets</div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -725,7 +725,7 @@
         </div>
         <div class="menu-card-price">30</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -734,7 +734,7 @@
         </div>
         <div class="menu-card-price">30</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -743,7 +743,7 @@
         </div>
         <div class="menu-card-price">30</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -752,7 +752,7 @@
         </div>
         <div class="menu-card-price">30</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -761,7 +761,7 @@
         </div>
         <div class="menu-card-price">30</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -770,7 +770,7 @@
         </div>
         <div class="menu-card-price">30</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -779,7 +779,7 @@
         </div>
         <div class="menu-card-price">30</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -788,7 +788,7 @@
         </div>
         <div class="menu-card-price">30</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -797,7 +797,7 @@
         </div>
         <div class="menu-card-price">30</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -806,7 +806,7 @@
         </div>
         <div class="menu-card-price">30</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -815,7 +815,7 @@
         </div>
         <div class="menu-card-price">30</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -824,7 +824,7 @@
         </div>
         <div class="menu-card-price">30</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -833,10 +833,10 @@
         </div>
         <div class="menu-card-price">30</div>
       </div>
-
+ 
       <!-- Norukkal -->
       <div class="cat-title">🫘 Norukkal (Crunchy Snacks)</div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -845,7 +845,7 @@
         </div>
         <div class="menu-card-price">35</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -854,7 +854,7 @@
         </div>
         <div class="menu-card-price">35</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -863,7 +863,7 @@
         </div>
         <div class="menu-card-price">35</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -872,10 +872,10 @@
         </div>
         <div class="menu-card-price">35</div>
       </div>
-
+ 
       <!-- Fried Items -->
       <div class="cat-title">🍟 Fried Items</div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -884,7 +884,7 @@
         </div>
         <div class="menu-card-price">70</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -893,7 +893,7 @@
         </div>
         <div class="menu-card-price">90</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -901,7 +901,7 @@
         </div>
         <div class="menu-card-price">90</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -910,7 +910,7 @@
         </div>
         <div class="menu-card-price">60</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -918,7 +918,7 @@
         </div>
         <div class="menu-card-price">90</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -926,7 +926,7 @@
         </div>
         <div class="menu-card-price">90</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -935,7 +935,7 @@
         </div>
         <div class="menu-card-price">90</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -943,7 +943,7 @@
         </div>
         <div class="menu-card-price">55</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -952,7 +952,7 @@
         </div>
         <div class="menu-card-price">65</div>
       </div>
-
+ 
       <div class="menu-card">
         <div class="veg-dot"></div>
         <div class="menu-card-info">
@@ -960,11 +960,11 @@
         </div>
         <div class="menu-card-price">90</div>
       </div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <!-- SPECIALS SECTION -->
 <section class="specials-section" id="specials">
   <div class="max-w" style="position:relative;z-index:1">
@@ -1000,7 +1000,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- MOJITO SECTION -->
 <section class="mojito-section">
   <div class="section-label" style="text-align:center">Refreshing Drinks</div>
@@ -1019,7 +1019,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- LOCATION -->
 <section class="location-section" id="location">
   <div class="location-container">
@@ -1062,7 +1062,7 @@
         </a>
       </div>
     </div>
-
+ 
     <div class="map-embed">
       <iframe
         src="https://maps.google.com/maps?q=10.863492,78.686350&z=16&output=embed"
@@ -1074,7 +1074,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <div style="font-family:'Bebas Neue',cursive;font-size:1.8rem;color:white;letter-spacing:2px;margin-bottom:0.3rem">
@@ -1083,15 +1083,16 @@
   <div>Pure Veg · Soup &amp; Snacks · Srirangam, Tiruchirappalli</div>
   <div style="margin-top:0.5rem">📞 <a href="tel:9952468862" style="color:var(--yellow);text-decoration:none;">99524 68862</a></div>
   <div style="margin-top:1rem;font-size:0.75rem;opacity:0.4">© 2025 Spicy Jet Soup &amp; Snacks. All rights reserved.</div>
+  <div style="margin-top:0.8rem;font-size:0.8rem;opacity:0.6">Designed by <a href="https://srijith.vercel.app" target="_blank" style="color:var(--yellow);text-decoration:none;font-weight:700;letter-spacing:1px;">SRIJITH</a></div>
 </footer>
-
+ 
 <script>
   // Sticky nav
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);
   });
-
+ 
   // Animate cards on scroll
   const cards = document.querySelectorAll('.menu-card, .special-card, .mojito-card');
   const observer = new IntersectionObserver((entries) => {
@@ -1103,7 +1104,7 @@
       }
     });
   }, { threshold: 0.1 });
-
+ 
   cards.forEach(c => observer.observe(c));
 </script>
 </body>
